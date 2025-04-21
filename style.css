@@ -1,0 +1,176 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+header .contacts a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; /* Example button color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+header .search img {
+    height: 20px; /* Adjust as needed */
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-image.jpg'); /* Replace with your hero image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden; /* To contain social links */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero .scroll-explore {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.hero .social-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero .social-links a img {
+    width: 25px; /* Adjust as needed */
+    height: auto;
+}
+
+.hero .image-slider {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero .slider-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.hero .slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero .slider-dots .dot.active {
+    background-color: #fff;
+}
+
+/* Who We Are Section Styles */
+.who-we-are {
+    padding: 80px 0;
+    background-image: url('who-we-are-bg.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.who-we-are .container {
+    background-color: rgba(0, 0, 0, 0.7); /* Optional overlay for better text readability */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.who-we-are h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.who-we-are p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.who-we-are .learn-more-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
