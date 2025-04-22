@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Tijaria - Thatcher Residential Complex</title>
+    <title>Tijaria</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <!-- <img src="logo.png" alt="Al Tijaria Logo"> </div> -->
+                <img src="logo.png" alt="Al Tijaria Logo">
+            </div>
             <nav>
                 <ul>
                     <li><a href="#">HOME</a></li>
@@ -23,48 +25,258 @@
                     <li><a href="#">CAREERS</a></li>
                 </ul>
             </nav>
-            <div class="contacts">
-                <a href="#">CONTACTS</a>
+            <div class="header-right">
+                <div class="contacts-box">
+                    <a href="#">CONTACTS</a>
+                </div>
+                <div class="search-icon">
+                    <img src="search-icon.png" alt="Search">
+                </div>
             </div>
-            <div class="search">
-                <img src="search-icon.png" alt="Search"> </div>
         </div>
     </header>
-
+    
     <section class="hero">
         <div class="hero-content">
             <h1>Thatcher Residential Complex</h1>
             <a href="#who-we-are" class="scroll-explore">Scroll to Explore</a>
         </div>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="at1.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="at2.jpg" alt="Image 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="at3" alt="Image 3">
+            </div>
+        </div>
         <div class="social-links">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a> <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
             <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
         </div>
         <div class="image-slider">
             <div class="slider-dots">
                 <span class="dot active"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                <span class="dot"></span>
             </div>
         </div>
     </section>
 
-    <section id="who-we-are" class="who-we-are">
-        <div class="container">
-            <h2>WHO WE ARE</h2>
-            <p>THE COMMERCIAL REAL ESTATE COMPANY, K.P.S.C (AL TIJARIA) WAS ESTABLISHED IN THE YEAR 1968 AND RESTRUCTURED IN THE YEAR 2000. THE COMPANY HAS BEEN IN BUSINESS FOR OVER 52 YEARS AND WAS LISTED IN THE KUWAIT STOCK EXCHANGE (KSE ) TOWARDS THE END OF 2004. THE COMPANY IS CONSIDERED ONE OF THE LARGEST REAL ESTATE COMPANIES IN THE STATE OF KUWAIT WITH REGARDS TO PAID UP CAPITAL.</p>
-            <a href="#" class="learn-more-btn">Learn More About Us</a>
-        </div>
+    <section class="second-page">
+                <div class="container">
+                    <img src="at4.jpg" alt="Background image for Who We Are">
+                    <div class="left-text">
+                        <h2>WHO WE ARE</h2>
+                    </div>
+                    <div class="right-text">
+                        <p>The Commercial Real Estate Company, K.P.S.C (Al Tijaria) was established in the year 1968 and restructured in the year 2000. The company has been in business for over 52 years and was listed in the Kuwait Stock Exchange (KSE ) towards the end of 2004. The company is considered one of the largest real estate companies in the State of Kuwait with regards to paid up capital.</p>
+                    </div>
+                </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Al Tijaria. All rights reserved.</p>
+    <div class="chairman-message-section">
+        <div class="chairman-container">
+            <div class="chairman-text">
+                <h2>CHAIRMAN'S MESSAGE</h2>
+                <p>THE COMMERCIAL REAL ESTATE COMPANY IS ONE OF THE LEADING COMPANIES IN KUWAIT AND THE REGION IN REAL ESTATE DEVELOPMENT AND MANAGEMENT. WE ARE WHERE WE ARE TODAY BECAUSE OF THE RICH EXPERIENCE AND KNOWLEDGE ACCUMULATED SINC...</p>
+                <a href="#" class="read-more-button">Read More</a>
+            </div>
+            <div class="chairman-image">
+                <img src="ch2.jpg" alt="Chairman">
+            </div>
         </div>
-    </footer>
+    </div>
+      <!-- 4TH SLIDE -->
+      <div class="property-slide">
+        <div class="property-text">
+            <h2>OUR PROPERTY COLLECTIONS</h2>
+            <p>The Main Focus Of Al-Tijaria Is Directed Towards Commercial Property Investment In The State Of Kuwait, GCC & MENA Regions And Internationally. It Is A Multi -Faceted Organization. All Financial Aspects Are Governed By The Islamic Sharia (Laws).</p>
+            <button class="read-more-button" data-building-name="Building 1" data-description="[Your long description for Building 1 here]">Read More</button>
+        </div>
+        <div class="property-images">
+            <div class="property-card">
+                <img src="im10.jpg" alt="Building 1">
+                <button class="read-more-button" data-building-name="Building 2" data-description="[Your long description for Building 2 here]">Read More</button>
+            </div>
+            <div class="property-card">
+                <img src="im2.jpg" alt="Building 2">
+                <button class="read-more-button" data-building-name="Building 3" data-description="[Your long description for Building 3 here]">Read More</button>
+            </div>
+            <div class="property-card">
+                <img src="im8.jpg" alt="Building 4">
+                <button class="read-more-button" data-building-name="Building 4" data-description="[Your long description for Building 4 here]">Read More</button>
+            </div>
+            </div>
+    </div>
+    
+    <div id="property-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h3 id="popup-building-name"></h3>
+            <p id="popup-building-description"></p>
+        </div>
+    </div>
+    
 
-    <script src="script.js"></script>
+    <!-- 5TH SLIDE -->
+    <div class="events-slide">
+        <h2>OUR EVENTS</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-date">17 FEB 2024</div>
+                <img src="im1.jpg" alt="Event 1">
+                <h3>The Commercial Real Estate ...</h3>
+                <p>The Commercial Real Estate Company organized the initiative "Plant a tree in my Country" in cooperation with Fatima...</p>
+                <a href="#" class="read-more-link">Read More <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div class="event-card">
+                <div class="event-date">17 FEB 2024</div>
+                <img src="im3.jpg" alt="Event 2">
+                <h3>The Commercial Real Estate ...</h3>
+                <p>The Commercial Real Estate Company organized the initiative "Plant a tree in my Country" in cooperation with Fatima...</p>
+                <a href="#" class="read-more-link">Read More <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div class="event-card">
+                <div class="event-date">17 FEB 2024</div>
+                <img src="im4.jpg" alt="Event 3">
+                <h3>The Commercial Real Estate ...</h3>
+                <p>The Commercial Real Estate Company organized the initiative "Plant a tree in my Country" in cooperation with Fatima...</p>
+                <a href="#" class="read-more-link">Read More <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div class="event-card">
+                <div class="event-date">17 FEB 2024</div>
+                <img src="im5.jpg" alt="Event 4">
+                <h3>The Commercial Real Estate ...</h3>
+                <p>The Commercial Real Estate Company organized the initiative "Plant a tree in my Country" in cooperation with Fatima...</p>
+                <a href="#" class="read-more-link">Read More <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div class="event-card">
+                <div class="event-date">17 FEB 2024</div>
+                <img src="im6.jpg" alt="Event 5">
+                <h3>The Commercial Real Estate ...</h3>
+                <p>The Commercial Real Estate Company organized the initiative "Plant a tree in my Country" in cooperation with Fatima...</p>
+                <a href="#" class="read-more-link">Read More <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <div class="event-card">
+                <div class="event-date">17 FEB 2024</div>
+                <img src="im7.jpg" alt="Event 6">
+                <h3>The Commercial Real Estate ...</h3>
+                <p>The Commercial Real Estate Company organized the initiative "Plant a tree in my Country" in cooperation with Fatima...</p>
+                <a href="#" class="read-more-link">Read More <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- 6TH Slide -->
+<div class="latest-news-slide">
+    <h2>LATEST NEWS</h2>
+    <div class="news-articles">
+        <div class="news-card">
+            <img src="im9.jpg" alt="News 1">
+            <h3>The Commercial Real Estate ...</h3>
+            <p>The Commercial Real Estate Company organized the initiative "Plant a tree in my Country" in cooperation with Fatima...</p>
+            <a href="#" class="read-more-link">Read More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="news-card">
+            <img src="im1.jpg" alt="News 2">
+            <h3>The Commercial Real Estate ...</h3>
+            <p>The Commercial Real Estate Company organized the initiative "Plant a tree in my Country" in cooperation with Fatima...</p>
+            <a href="#" class="read-more-link">Read More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="news-card">
+            <img src="im5.jpg" alt="News 3">
+            <h3>The Commercial Real Estate ...</h3>
+            <p>The Commercial Real Estate Company organized the initiative "Plant a tree in my Country" in cooperation with Fatima...</p>
+            <a href="#" class="read-more-link">Read More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+    </div>
+</div>
+
+<!-- AWARD SECTION -->
+<section class="awards-section">
+    <div class="awards-text-container">
+        <!-- <h2 class="background-awards light-award-1">AWARDS</h2> -->
+        <h2 class="background-awards light-award-2">AWARDS</h2>
+        <h2 class="foreground-awards">AWARDS</h2>
+    </div>
+    <div class="proud-text">
+        <h3>PROUD OF OUR ACHIEVEMENTS</h3>
+    </div>
+    <div class="award-items-container">
+        <div class="award-item">
+            <p class="year">2024</p>
+            <p class="description">The Commercial Real Estate ...</p>
+            <a href="#" class="award-read-more">Read More</a>
+        </div>
+        <div class="award-item">
+            <p class="year">2024</p>
+            <p class="description">The Commercial Real Estate ...</p>
+            <a href="#" class="award-read-more">Read More</a>
+        </div>
+        <div class="award-item">
+            <p class="year">2024</p>
+            <p class="description">The Commercial Real Estate ...</p>
+            <a href="#" class="award-read-more">Read More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Get In touch -->
+<section class="get">
+    <div class = "left-side">
+    <div class="get-in-touch-container">
+        <h2>GET IN TOUCH</h2>
+        <p>Fill up the form and our team will get back to you within 24 hours</p>
+    </div>
+
+    <div class="get-items-container">
+        <div class="location">
+        <span class="icon"> &#x1F4CD;</span>   Al-Sharq Jaber Al Mubarak St.
+        <br>
+
+        </div>
+
+        <div class="phone">
+            <span class="icon">&#x260E;</span> +39 346 368 5708
+        </div>
+        <div class="email">
+            <span class="icon">&#x2709;</span> italia.inlmo@gmail.com
+        </div>
+
+    </div>
+    </div>
+    <div class="form">
+        <form action="#" method="POST">
+            <div class="form-item">
+                <label for="name">Name and Surname</label>
+                <input type ="text" id="name" name="name"placeholder="Enter your name and surname" required>
+            </div>
+
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-item">
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" placeholder="Enter your message" required>
+            </div>
+            <button type="submit"> submit </button>
+        </form>
+    </div>
+</section>
+
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21148.178795151685!2d50.540551178706174!3d26.241142762881264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1745310148575!5m2!1sen!2sin" height="400"
+    style="border:0;"
+    width="100%"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
 </body>
 </html>
+
